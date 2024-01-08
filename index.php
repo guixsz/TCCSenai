@@ -25,7 +25,6 @@
                 <li><a href="#games">JOGOS</a></li>
                 <li><a href="#about-us">SOBRE NÓS</a></li>
                 <li><a href="#join-us">JUNTE-SE A NÓS</a></li>
-                <li><a href="#">XUCURU-KARIRIS</a></li>
             </ul>
 
             <div>
@@ -40,7 +39,8 @@
         <div class="about-project">
             <div class="project-text">
                 <h2>Sobre o projeto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda omnis soluta error quis consectetur accusamus pariatur, asperiores totam, iure doloremque libero ad quod voluptatem nostrum porro necessitatibus dolore magni inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit.! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem molestiae quos necessitatibus similique! Voluptatibus quo cupiditate deserunt nemo. Provident expedita veniam distinctio tempore rem ut voluptate suscipit odio tempora eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nesciunt aliquam ea incidunt? Rerum adipisci nulla libero quo, consequatur recusandae quibusdam ipsa facere. Harum quam fugit sapiente placeat tempora reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo illum aliquid nemo, sequi dolore! At facilis eius magni et doloremque, hic cumque illum dolores delectus, assumenda, amet architecto aspernatur?lorem</p>
+                <p>O projeto propõe o desenvolvimento de um sistema inovador de aprendizagem voltado para crianças de 6 a 10 anos, utilizando jogos para explorar e ensinar sobre a rica história e cultura indígena. Com o intuito de atender à Lei nº 11645/08, que estabelece a obrigatoriedade do ensino sobre a história e cultura afro-brasileira e indígena nas escolas, a iniciativa busca diversificar as formas de aprendizado em sala de aula e promover a representatividade da cultura indígena no contexto educacional.
+</p>
             </div>
             <div class="project-img">
                 <h2>Imagem do projeto</h2>
@@ -84,7 +84,7 @@
         <div class="about">
             <div class="about-us-text">
                 <h3>Sobre nós</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed voluptatibus vitae iusto nostrum reprehenderit ipsam in ab aliquam? Ipsa molestiae possimus minus non, nulla rem praesentium suscipit ipsam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quibusdam necessitatibus, saepe consectetur amet dicta, placeat eos sequi modi impedit temporibus eum porro. Labore alias debitis, enim veritatis neque quae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae vel ab vero nemo est? Laboriosam, cumque hic. Unde nobis inventore enim tenetur voluptatum placeat? Soluta suscipit fuga esse hic veritatis.<ut class="lorem"></ut></p>
+                <p>Somos uma equipe de desenvolvedores de software. Nosso compromisso é criar soluções inovadoras que não apenas atendam às exigências legais, mas também inspirem uma mudança significativa na forma como as crianças aprendem sobre a rica diversidade cultural do Brasil. Acreditamos que a educação é a chave para construir sociedades mais inclusivas, e nosso projeto visa contribuir ativamente para essa transformação, proporcionando uma abordagem envolvente e respeitosa para o ensino da história e cultura indígena.<ut class="lorem"></ut></p>
             </div>
         </div>
     </section>
@@ -92,7 +92,7 @@
     <section id="join-us">
             <div class="join-us-text">
                 <h2>Junte-se a nós</h2>
-                <h3>Faça parte do nosso time e venha conheçer e desbravar a rica e brilhante história e cultura indígena de uma forma didática e  divertida ao lado do Aventura Ancestral</h3>
+                <h3>Faça parte do nosso time e venha conhecer e desbravar a rica e brilhante história e cultura indígena de uma forma didática e  divertida ao lado do Aventura Ancestral</h3>
             </div>
             <div class="join-us-button">
                 <p id="signup-btn">Sou professor</p>
@@ -103,7 +103,7 @@
     <div id="signup-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <form id="signup-form">
+            <form id="signup-form" method="post" action="PHP/processaProfessor.php">
                 <div>
                     <label for="fullname">Nome completo:</label>
                     <input type="text" id="fullname" name="fullname" required><br><br>
@@ -134,7 +134,7 @@
     <div id="signup-modal-aluno" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <form id="signup-form">
+            <form id="signup-form" method="post" action="PHP/processaAluno.php">
                 <div>
                     <label for="fullname">Nome completo:</label>
                     <input type="text" id="fullname" name="fullname" required><br><br>
