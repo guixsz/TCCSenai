@@ -6,8 +6,9 @@
     $dataNascimento = filter_input(INPUT_POST, 'birthdate');
     $email = filter_input(INPUT_POST, 'email');
     $senha = filter_input(INPUT_POST, 'password');
-
-    $result_aluno = "insert into aluno (name, ra, date, email, password) values ('$nome', '$ra', '$dataNascimento', '$email', '$senha')";
+    $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+    
+    $result_aluno = "insert into aluno (name, ra, date, email, password) values ('$nome', '$ra', '$dataNascimento', '$email', '$senha_hash')";
     $resultado_aluno = mysqli_query($conn, $result_aluno);  
 
     if(mysqli_insert_id($conn)) {
@@ -15,4 +16,6 @@
     }   else    {
         header("Location: ../index.php");
     }
+
+
 ?>
