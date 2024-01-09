@@ -39,12 +39,11 @@
         <div class="about-project">
             <div class="project-text">
                 <h2>Sobre o projeto</h2>
-                <p>O projeto propõe o desenvolvimento de um sistema inovador de aprendizagem voltado para crianças de 6 a 10 anos, utilizando jogos para explorar e ensinar sobre a rica história e cultura indígena. Com o intuito de atender à Lei nº 11645/08, que estabelece a obrigatoriedade do ensino sobre a história e cultura afro-brasileira e indígena nas escolas, a iniciativa busca diversificar as formas de aprendizado em sala de aula e promover a representatividade da cultura indígena no contexto educacional.
-</p>
+                <p>O projeto propõe o desenvolvimento de um sistema inovador de aprendizagem voltado para crianças de 6 a 10 anos, utilizando jogos para explorar sobre a rica história e cultura indígena. Com o intuito de atender à Lei nº 11645/08, que estabelece a obrigatoriedade do ensino sobre a história e cultura afro-brasileira e indígena nas escolas, a iniciativa busca diversificar as formas de aprendizado em sala de aula e promover a representatividade da cultura indígena no contexto educacional.</p>
             </div>
-            <div class="project-img">
-                <h2>Imagem do projeto</h2>
-            </div>
+
+            <img src="Image/Inara.jpg" alt="">
+
         </div>
     </section>
 
@@ -103,7 +102,8 @@
     <div id="signup-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <form id="signup-form" method="post" action="PHP/processaProfessor.php">
+            <form id="signup-form" method="post" action="
+            PHP/processaProfessor.php">
                 <div>
                     <label for="fullname">Nome completo:</label>
                     <input type="text" id="fullname" name="fullname" required><br><br>
