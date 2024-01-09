@@ -27,12 +27,12 @@ use function PHPSTORM_META\sql_injection_subst;
         $result_cpf = $stmt->get_result();
 
         if ($result_email->num_rows > 0) {
-            throw new \Exception("Esse email já está sendo usado, digite outro.");
+                throw new \Exception("Esse email já está sendo usado, digite outro.");
         }
 
 
         if  ($result_cpf->num_rows > 0)  {
-            throw new \Exception("Esse Cpf já está cadastrado, informe outro");
+                throw new \Exception("Esse Cpf já está cadastrado, informe outro");
         }
 
         if  (!is_numeric($cpf))  {
@@ -51,8 +51,7 @@ use function PHPSTORM_META\sql_injection_subst;
 
     }   catch (\Exception $e)  {
             print_r($e->getMessage());
-            print_r($e->getMessage());
-    }
+}
 
     
 ?>
